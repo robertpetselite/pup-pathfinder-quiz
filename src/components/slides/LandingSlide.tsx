@@ -12,7 +12,7 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
       <div className="absolute top-1 left-1 z-20">
         <img 
           src="/lovable-uploads/66baaea8-6a9e-4cf7-b77f-4813fa4bd576.png" 
-          alt="Pets Elite" 
+          alt="Pets Elite"
           className="h-12 md:h-16 w-auto"
         />
       </div>
