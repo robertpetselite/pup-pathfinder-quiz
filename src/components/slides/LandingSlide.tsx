@@ -29,16 +29,7 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
             Answer a few quick questions and get a personalized feeding guide tailored just for your furry friend.
           </p>
           
-          <div className="max-w-md mx-auto">
-            <QuizButton
-              variant="primary"
-              onClick={onStartQuiz}
-              className="text-xl py-6 px-8 w-full"
-            >
-              🐕 Start Quiz
-            </QuizButton>
-          </div>
-        </div>
+          
         
         {/* Dog Image */}
         <div className="max-w-2xl mx-auto mt-8">
@@ -47,6 +38,16 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
             alt="Happy smiling pitbull with tongue out" 
             className="w-full h-auto rounded-2xl shadow-lg"
           />
+        </div>
+        <div className="max-w-md mx-auto">
+            <QuizButton
+              variant="primary"
+              onClick={onStartQuiz}
+              className="text-xl py-6 px-8 mt-6 w-full"
+            >
+              Diet Guide
+            </QuizButton>
+          </div>
         </div>
       </div>
     </div>

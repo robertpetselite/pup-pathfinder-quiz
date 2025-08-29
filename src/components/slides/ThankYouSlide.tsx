@@ -55,7 +55,9 @@ export function ThankYouSlide({ customerName }: ThankYouSlideProps) {
               Want to learn more about Pets Elite premium products?
             </p>
             <a 
-              href="#" 
+              href="https://petselite.co.za/all-products/" 
+              target="_blank"
+              rel="noopener"
               className="text-primary hover:text-primary/80 font-semibold underline"
             >
               Browse Our Complete Product Range →

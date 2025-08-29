@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Pet-friendly warm color palette */
-    --background: 220 9% 89%;
+    --background: #fff;
     --foreground: 220 9% 9%;
 
     --card: 0 0% 100%;
