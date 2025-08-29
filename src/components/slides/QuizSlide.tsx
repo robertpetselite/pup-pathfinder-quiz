@@ -1,12 +1,14 @@
 import { QuizQuestion } from '@/types/quiz';
 import { QuizButton } from '@/components/QuizButton';
 import { ProgressIndicator } from '@/components/ProgressIndicator';
+import { ChevronLeft } from 'lucide-react';
 
 interface QuizSlideProps {
   question: QuizQuestion;
   currentStep: number;
   totalSteps: number;
   onAnswer: (questionId: string, answer: string) => void;
+  onBack?: () => void;
   isAnimating: boolean;
 }
 
@@ -15,10 +17,31 @@ export function QuizSlide({
   currentStep, 
   totalSteps, 
   onAnswer, 
+  onBack,
   isAnimating 
 }: QuizSlideProps) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background px-6">
+      {/* Logo */}
+      <div className="absolute top-8 left-8 z-20">
+        <img 
+          src="/lovable-uploads/66baaea8-6a9e-4cf7-b77f-4813fa4bd576.png" 
+          alt="Pets Elite" 
+          className="h-12 md:h-16 w-auto"
+        />
+      </div>
+
+      {/* Back Button */}
+      {onBack && (
+        <button
+          onClick={onBack}
+          className="absolute top-8 right-8 z-20 flex items-center gap-2 px-4 py-2 text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <ChevronLeft size={20} />
+          <span className="hidden sm:inline">Back</span>
+        </button>
+      )}
+
       <div className={`w-full max-w-2xl mx-auto transition-all duration-400 ${isAnimating ? 'opacity-0 transform translate-x-4' : 'opacity-100 transform translate-x-0'}`}>
         <ProgressIndicator 
           currentStep={currentStep} 

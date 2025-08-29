@@ -46,6 +46,20 @@ export function PetQuizFunnel() {
     }, 300);
   }, [answers, currentQuestionIndex]);
 
+  const handleBack = useCallback(() => {
+    setIsAnimating(true);
+    setTimeout(() => {
+      if (currentQuestionIndex > 0) {
+        // Go to previous question
+        setCurrentQuestionIndex(prev => prev - 1);
+      } else {
+        // Go back to landing slide
+        setCurrentSlide('landing');
+      }
+      setIsAnimating(false);
+    }, 300);
+  }, [currentQuestionIndex]);
+
   const handleGetGuide = useCallback(() => {
     setIsAnimating(true);
     setTimeout(() => {
@@ -79,6 +93,7 @@ export function PetQuizFunnel() {
             currentStep={currentQuestionIndex + 1}
             totalSteps={QUIZ_QUESTIONS.length}
             onAnswer={handleQuizAnswer}
+            onBack={handleBack}
             isAnimating={isAnimating}
           />
         );

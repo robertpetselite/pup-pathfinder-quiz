@@ -14,6 +14,15 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
+      {/* Logo */}
+      <div className="absolute top-8 left-8 z-20">
+        <img 
+          src="/lovable-uploads/66baaea8-6a9e-4cf7-b77f-4813fa4bd576.png" 
+          alt="Pets Elite" 
+          className="h-12 md:h-16 w-auto"
+        />
+      </div>
+      
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-in">
