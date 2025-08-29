@@ -48,7 +48,16 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
               Diet Guide
             </QuizButton>
           </div>
-        </div>
+        </div >
+        <div className="max-w-screen-xl">
+          <footer className=" bg-white text-gray-900 text-center py-4">
+            <p className="text-sm">© <span id="year"></span> Pets Elite. All rights reserved.</p>
+          </footer>
+</div>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
       </div>
     </div>
   );

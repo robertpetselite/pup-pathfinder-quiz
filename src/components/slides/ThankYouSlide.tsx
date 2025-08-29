@@ -55,12 +55,12 @@ export function ThankYouSlide({ customerName }: ThankYouSlideProps) {
               Want to learn more about Pets Elite premium products?
             </p>
             <a 
-              href="https://petselite.co.za/all-products/" 
+              href="https://petsalott.co.za/shop-2/" 
               target="_blank"
               rel="noopener"
               className="text-primary hover:text-primary/80 font-semibold underline"
             >
-              Browse Our Complete Product Range →
+              Browse Our Complete Product Range → <span className="hover:text-blue-600">Petsalott</span>
             </a>
           </div>
         </div>
