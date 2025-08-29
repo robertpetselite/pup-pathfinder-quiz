@@ -43,8 +43,8 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
         {/* Dog Image */}
         <div className="max-w-2xl mx-auto mt-8">
           <img 
-            src={heroImage}
-            alt="Happy smiling dog" 
+            src="/lovable-uploads/d174c9cf-2954-442b-9b9f-e8149caa994b.png"
+            alt="Happy smiling pitbull with tongue out" 
             className="w-full h-auto rounded-2xl shadow-lg"
           />
         </div>
