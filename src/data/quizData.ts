@@ -3,7 +3,7 @@ import { QuizQuestion, QuizResult } from '@/types/quiz';
 export const QUIZ_QUESTIONS: QuizQuestion[] = [
   {
     id: 'age',
-    question: "What is your Furry Friends Name?",
+    question: "What is your Furry Friends Age?",
     options: [
       { id: 'puppy', text: 'Puppy (0-1 year)', value: 'puppy' },
       { id: 'adult', text: 'Adult (1-7 years)', value: 'adult' },
