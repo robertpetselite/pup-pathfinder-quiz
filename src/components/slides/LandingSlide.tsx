@@ -9,7 +9,7 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       {/* Logo */}
-      <div className="absolute top-0 left-1 z-20">
+      <div className="absolute top-1 left-1 z-20">
         <img 
           src="/pe-logo-white.png" 
           alt="Pets Elite" 
