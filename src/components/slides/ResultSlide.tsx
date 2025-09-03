@@ -1,5 +1,6 @@
 import { QuizResult } from '@/types/quiz';
 import { QuizButton } from '@/components/QuizButton';
+import { handleDownload } from '@/slides/pdfdoc';
 
 interface ResultSlideProps {
   result: QuizResult;

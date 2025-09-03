@@ -9,7 +9,7 @@ export function ThankYouSlide({ customerName }: ThankYouSlideProps) {
     // In a real app, this would download the actual PDF
     // For demo purposes, we'll create a mock download
     const link = document.createElement('a');
-    link.href = '#'; // Would be the actual PDF URL
+    link.href = './dog_plan_guide.pdf'; // Would be the actual PDF URL
     link.download = 'pets-elite-feeding-guide.pdf';
     link.click();
   };
@@ -41,7 +41,7 @@ export function ThankYouSlide({ customerName }: ThankYouSlideProps) {
               <li>✓ Special dietary considerations</li>
             </ul>
           </div>
-          
+
           <QuizButton
             variant="primary"
             onClick={handleDownload}
@@ -49,6 +49,7 @@ export function ThankYouSlide({ customerName }: ThankYouSlideProps) {
           >
             📥 Download Your Guide Now
           </QuizButton>
+
           
           <div className="border-t border-border pt-6">
             <p className="text-sm text-muted-foreground mb-4">
