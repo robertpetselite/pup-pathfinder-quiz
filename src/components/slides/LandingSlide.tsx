@@ -13,7 +13,7 @@ export function LandingSlide({ onStartQuiz }: LandingSlidePro) {
         <img 
           src="/pe-logo-white.png" 
           alt="Pets Elite" 
-          className="h-24 md:h-24 w-auto"
+          className="h-12 md:h-24 w-auto"
         />
       </div>
       
