@@ -23,9 +23,9 @@ export function QuizSlide({
   return (
     <div className="min-h-screen flex items-center justify-center bg-background px-6">
       {/* Logo */}
-      <div className="absolute top-8 left-8 z-20">
+      <div className="absolute top-5 left-8 z-20">
         <img 
-          src="/lovable-uploads/66baaea8-6a9e-4cf7-b77f-4813fa4bd576.png" 
+          src="/pe-logo-white.png" 
           alt="Pets Elite" 
           className="h-12 md:h-16 w-auto"
         />
